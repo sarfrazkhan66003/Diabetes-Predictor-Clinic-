@@ -71,21 +71,21 @@
 
 ## Project Structure 📁
 
-diabetes-predictor-clinic/
-├── Model/
-│   ├── modelForPrediction.pkl         # pickled trained classifier
-│   └── standardScalar.pkl             # pickled StandardScaler
-├── templates/
-│   ├── login.html
-│   ├── register.html
-│   ├── home.html
-│   └── single_prediction.html
-├── static/                            # optional: css, js, images
-├── patients_register.xlsx             # created after first registration
-├── patients_data.xlsx                 # created after first prediction
-├── requirements.txt
-├── app.py (or application.py)         # main Flask app
-└── README.md
+    diabetes-predictor-clinic/
+    ├── Model/
+    │   ├── modelForPrediction.pkl         # pickled trained classifier
+    │   └── standardScalar.pkl             # pickled StandardScaler
+    ├── templates/
+    │   ├── login.html
+    │   ├── register.html
+    │   ├── home.html
+    │   └── single_prediction.html
+    ├── static/                            # optional: css, js, images
+    ├── patients_register.xlsx             # created after first registration
+    ├── patients_data.xlsx                 # created after first prediction
+    ├── requirements.txt
+    ├── app.py (or application.py)         # main Flask app
+    └── README.md
 
 ## Process / Flow 🔁
 
@@ -155,11 +155,6 @@ diabetes-predictor-clinic/
 ## 2.Auto User ID & Password Generator
 <img width="668" height="565" alt="Screenshot 2025-11-19 205352" src="https://github.com/user-attachments/assets/167809c4-d6b3-469f-856c-eff21f0c925f" />
 
-# Conclusion 🧾
-
-- This project demonstrates how to convert an ML model into a user-accessible web service with meaningful UX for patients and clinics.
-  It covers registration, authentication, secure model inference, and persistence of data — an excellent template for small healthcare demos or PoCs.
-
 ## 3.Diabetes Prediction Form
 <img width="1919" height="933" alt="Screenshot 2025-11-19 205240" src="https://github.com/user-attachments/assets/b1d45840-b3cd-42a7-a05f-8648d6860c4a" />
 
@@ -168,4 +163,7 @@ diabetes-predictor-clinic/
 
 
 
+# Conclusion 🧾
 
+- This project demonstrates how to convert an ML model into a user-accessible web service with meaningful UX for patients and clinics.
+  It covers registration, authentication, secure model inference, and persistence of data — an excellent template for small healthcare demos or PoCs.
