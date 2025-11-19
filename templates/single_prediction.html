@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(to right, #1d2671, #c33764);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .card {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            width: 430px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(7px);
+        }
+        .result {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .diabetic {
+            background: rgba(255, 0, 0, 0.7);
+        }
+        .normal {
+            background: rgba(0, 255, 0, 0.7);
+        }
+        .branding {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+<div class="card">
+    <h2>Prediction Result</h2>
+
+    <h3>Patient: {{ patient_name }}</h3>
+
+    <div class="result 
+        {% if result == 'Diabetic' %}
+            diabetic
+        {% else %}
+            normal
+        {% endif %}
+    ">
+        {{ result }}
+    </div>
+
+    <p class="branding">Developed by: <b>Sarfraz Khan</b></p>
+</div>
+
+</body>
+</html>

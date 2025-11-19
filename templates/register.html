@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            display: flex; justify-content: center;
+            align-items: center; height: 100vh; color: white;
+        }
+        .box {
+            width: 450px; padding: 25px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px; text-align: center;
+        }
+        input, textarea {
+            width: 90%; padding: 10px;
+            margin: 8px; border-radius: 7px; border: none;
+        }
+        button {
+            width: 95%; padding: 12px;
+            background: #00ff99;
+            border: none; border-radius: 7px;
+            color: black; font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <h2>Patient Registration</h2>
+
+    <form action="/save_registration" method="post">
+
+        <input type="text" name="name" placeholder="Patient Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="text" name="mobile" placeholder="Mobile Number" required>
+        <textarea name="problem" placeholder="Describe your problem" required></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
