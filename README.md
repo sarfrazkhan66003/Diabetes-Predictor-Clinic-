@@ -126,9 +126,9 @@
 
 ### ASCII sketch:
 
-- Register --> Save register.xlsx --> Login
-- Login --valid--> Home (prediction form)
-- Home --submit-> Preprocess -> Model -> Save predictions.xlsx -> Result page
+  - Register --> Save register.xlsx --> Login
+  - Login --valid--> Home (prediction form)
+  - Home --submit-> Preprocess -> Model -> Save predictions.xlsx -> Result page
 
 ## Sample Output 📤
 
